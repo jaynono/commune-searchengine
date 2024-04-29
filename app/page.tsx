@@ -1,9 +1,7 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Page() {
+const Page = () => {
   return (
     <main className="flex min-h-screen flex-row justify-around"
         style={{
@@ -17,7 +15,7 @@ export default function Page() {
           width={500}
           height={500}
           className="hidden md:inline-block"
-          alt="Screenshots of the dashboard project showing desktop version"
+          alt="Screenshots of the home project showing desktop version"
         />
       </div>
       
@@ -28,9 +26,8 @@ export default function Page() {
             Participate in the coolest and craziest bets.
             COMMUNE always brings only fortunate choices.
           </p>
-          {/* <LoginForm /> */}
           <Link
-              href="/dashboard"
+              href="/home"
               className="mt-4 rounded-md bg-blue-500 px-4 py-2 text-sm text-white transition-colors hover:bg-blue-400"
             >
             Get Started
@@ -40,3 +37,5 @@ export default function Page() {
     </main>
   );
 }
+
+export default Page;
