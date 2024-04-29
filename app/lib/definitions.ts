@@ -88,14 +88,14 @@ export type InvoiceForm = {
 };
 
 export type Sitelist = {
-  id:number,
-  name: string,
-  location: string,
-  usercount: number,
+  id:number;
+  name: string;
+  location: string;
+  usercount: number;
 }
 
 export type todayevent ={
-    id:number,
+    id:number;
     teamlogo1: string;
     teamlogo2: string;
     teamname1: string;
@@ -104,8 +104,8 @@ export type todayevent ={
     amount: string;
   }
 
-  export type matchevent ={
-    id:number,
+  export type matchlist ={
+    id:number;
     teamlogo1: string;
     teamlogo2: string;
     teamname1: string;

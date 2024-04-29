@@ -14,7 +14,7 @@ export default function Page() {
         <main className='p-2 '>
             <div className="mt-6 flex flex-col justify-around gap-6 md:flex-row">
                 <div className='flex flex-col w-[70%]'>
-                    <span className={`font-medium text-4xl text-gray-300 dark:text-white flex justify-center my-4`}>Today's Match</span>
+                    <span className="font-medium text-4xl text-gray-300 dark:text-white flex justify-center my-4">Today's Match</span>
 
                     <Suspense fallback={<CardsSkeleton />}>
                         <CardWrapper />

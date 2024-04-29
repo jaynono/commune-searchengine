@@ -11,7 +11,7 @@ export default async function LatestInvoices(){
   const {popularsitelist} = data;
   return (
     <div className="flex w-[30%] flex-col md:col-span-4 scrollbar-container">
-      <span className={`font-medium text-2xl text-gray-300 justify-end px-4 dark:text-white flex my-4`}>Top 10 popular site</span>
+      <span className="font-medium text-2xl text-gray-300 justify-end px-4 dark:text-white flex my-4">Top 10 popular site</span>
       <div className="flex grow flex-col rounded-xl backdrop-blur-lg bg-opacity-50 bg-custom-blue dark:bg-blue-900 dark:backdrop-blur-lg dark:bg-opacity-50 p-4">
         {/* NOTE: comment in this code when you get to this point in the course */}
 

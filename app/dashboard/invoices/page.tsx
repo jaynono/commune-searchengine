@@ -1,8 +1,8 @@
-import Pagination from '@/app/ui/invoices/pagination';
+// import Pagination from '@/app/ui/invoices/pagination';
 import Search from '@/app/ui/search';
 import Table from '@/app/ui/invoices/table';
-import { CreateInvoice } from '@/app/ui/invoices/buttons';
-import { lusitana } from '@/app/ui/fonts';
+// import { CreateInvoice } from '@/app/ui/invoices/buttons';
+// import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { SignalIcon } from '@heroicons/react/24/outline';
@@ -13,7 +13,7 @@ export default async function Page() {
   return (
     <div className="w-full">
       <div className="flex w-full items-center justify-end my-6 pr-[27%]">
-        <h1 className={`font-medium text-4xl text-gray-300 dark:text-white`}>Find the best site</h1>
+        <h1 className="font-medium text-4xl text-gray-300 dark:text-white">Find the best site</h1>
       </div>
       <div className='flex flex-row justify-around'>
         <div className="mt-4 flex flex-col gap-6 items-center w-[30%] justify-center gap-2 px-14 md:mt-8">
