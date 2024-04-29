@@ -22,7 +22,7 @@ export default function Page() {
     );
     }
 
-    export function Cardlist(
+function Cardlist(
         {
         teamlogo1,
         teamlogo2,
