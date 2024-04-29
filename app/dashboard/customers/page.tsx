@@ -17,7 +17,7 @@ export default function Page() {
                 <Suspense fallback={<CardsSkeleton />}>
                     <div className='flex flex-wrap items-start justify-around  gap-1 row-gap-2 overflow-auto py-4 scrollbar-container'>
                         {data.map((data) => (
-                            <Card key={data.id} teamlogo1={data.teamlogo1} teamlogo2={data.teamlogo2} teamname1={data.teamname1} teamname2={data.teamname2} time={data.time} />
+                            <Cardlist key={data.id} teamlogo1={data.teamlogo1} teamlogo2={data.teamlogo2} teamname1={data.teamname1} teamname2={data.teamname2} time={data.time} />
                         ))}
                     </div>
                 </Suspense>
@@ -26,7 +26,7 @@ export default function Page() {
     );
     }
 
-    export function Card(
+    export function Cardlist(
         {
         teamlogo1,
         teamlogo2,
