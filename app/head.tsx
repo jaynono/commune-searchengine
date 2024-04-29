@@ -6,7 +6,7 @@ const Head = () => {
 
     return (
         <title>
-            Commune | Veting
+            Commune | Bet
         </title>
     )
 }
