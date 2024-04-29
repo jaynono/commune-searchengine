@@ -180,11 +180,6 @@ const Portfolio = () => {
               </div>
             </>
           )}
-          <StakingModal
-            open={stakingOpen}
-            setOpen={setStakingOpen}
-            validatorId={validatorId}
-          />
         </div>
       </div>
     </div>

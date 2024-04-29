@@ -21,7 +21,17 @@ const WalletModal = ({
     useState<InjectedAccountWithMeta>()
 
   return (
-    <Modal open={open} onCancel={() => setOpen(false)} centered>
+    <Modal open={open} onCancel={() => setOpen(false)} 
+        onOk={() => {
+            if (!selectedAccount) {
+                infoToast("Select at least one wallet!")
+                return
+                }
+                handleWalletSelections(selectedAccount as InjectedAccountWithMeta)
+            }}
+        okButtonProps = {{style : {color: "black", backgroundColor: "#4299e1" }}}
+        
+        centered >
       Choose your polkadot wallet to connect
       <hr className="my-3" />
       <div className="mt-5">
@@ -64,22 +74,6 @@ const WalletModal = ({
             </div>
           )}
         </div>
-      </div>
-      <div className="mt-5">
-        <Button
-          variant="primary"
-          size="large"
-          className="w-full justify-center"
-          onClick={() => {
-            if (!selectedAccount) {
-              infoToast("Select at least one wallet!")
-              return
-            }
-            handleWalletSelections(selectedAccount as InjectedAccountWithMeta)
-          }}
-        >
-          Select Wallet
-        </Button>
       </div>
     </Modal>
   )

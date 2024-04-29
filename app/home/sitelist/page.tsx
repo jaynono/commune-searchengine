@@ -17,9 +17,9 @@ const SiteListPage = () => {
             className="inline-block hidden md:block rounded-full w-[300px] h-[300px]"
             alt="Screenshots of the home project showing desktop version"
           />
-          <Search placeholder="Search ..." />
+          <Search placeholder="Chat with me." />
           <button className="bg-blue-500 dark:bg-blue-900 hover:bg-blue-700 text-white font-boldpy-2 py-2 px-4 rounded-full backdrop-blur-lg bg-opacity-50">
-            <div className='flex items-center w-12 h-8'><SignalIcon /></div>
+            <div className='flex items-center w-12 h-6 p-2'><SignalIcon /></div>
           </button>
         </div>
         <Suspense >

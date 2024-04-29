@@ -69,7 +69,7 @@ const SideNav = () => {
               </div>
             </div>
           ) : (
-            <div className="flex items-center gap-x-2">
+            <div className="flex items-center gap-x-2 ">
               {!isInitialized && <FaSpinner className="spinner" />}
               <Button
                 size="large"
@@ -77,7 +77,7 @@ const SideNav = () => {
                 onClick={handleConnect}
                 isDisabled={!isInitialized}
               >
-                <AiFillWallet size={18} />
+              <AiFillWallet size={18} />
                 Connect Wallet
               </Button>
             </div>

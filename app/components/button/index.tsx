@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantClasses = {
     primary:
-      "bg-button border-2  border-white text-white hover:!bg-none hover:border-2 hover:border-purple hover:text-purple disabled:opacity-50 disabled:!bg-button disabled:!border-none disabled:!text-white disabled:cursor-not-allowed",
+      "bg-blue-500 dark:bg-blue-900 hover:bg-blue-700 text-gray-300 dark:text-white font-boldpy-2 py-2 px-4 rounded-full backdrop-blur-lg bg-opacity-50",
     secondary: "bg-gray-500 hover:bg-gray-700 text-white",
     outlined:
       "bg-transparent border-purple border-2 text-purple hover:bg-button hover:text-white disabled:opacity-50 disabled:!bg-transparent disabled:!text-purple disabled:hover:!bg-none disabled:cursor-not-allowed",
